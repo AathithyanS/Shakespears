@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/homeGallerySearchTl"
+        style="@style/DropdownMenuStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        app:boxBackgroundColor="#00ffffff"
+        app:boxCornerRadiusBottomEnd="25dp"
+        app:boxCornerRadiusBottomStart="25dp"
+        app:boxCornerRadiusTopEnd="25dp"
+        app:boxCornerRadiusTopStart="25dp"
+        app:endIconDrawable="@drawable/ic_search"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <AutoCompleteTextView
+            android:id="@+id/searchEt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center_vertical"
+            android:hint="Search shows..."
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingVertical="0dp"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/showsRv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeGallerySearchTl" />
+</androidx.constraintlayout.widget.ConstraintLayout>

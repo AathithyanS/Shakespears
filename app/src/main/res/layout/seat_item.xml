@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/seatSelectTypeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Seating"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Remaining:"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seatSelectTypeTv" />
+
+        <TextView
+            android:id="@+id/seatSelectRemainingTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="0"
+            android:textSize="16dp"
+            app:layout_constraintStart_toEndOf="@+id/textView20"
+            app:layout_constraintTop_toTopOf="@+id/textView20" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Price:"
+            android:textSize="16dp"
+            android:fontFamily="@font/poppins_regular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Add your seats:"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+        <TextView
+            android:id="@+id/seatSelectCountTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="5dp"
+            android:text="0"
+            android:textSize="40dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView23"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView23" />
+
+        <ImageView
+            android:id="@+id/seatSelectIncreaseIv"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/seatSelectCountTv"
+            app:layout_constraintStart_toEndOf="@+id/seatSelectCountTv"
+            app:layout_constraintTop_toTopOf="@+id/seatSelectCountTv"
+            app:srcCompat="@drawable/ic_add" />
+
+        <ImageView
+            android:id="@+id/seatSelectDecreaseIv"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/seatSelectCountTv"
+            app:layout_constraintEnd_toStartOf="@+id/seatSelectCountTv"
+            app:layout_constraintTop_toTopOf="@+id/seatSelectCountTv"
+            app:srcCompat="@drawable/ic_remove" />
+
+        <TextView
+            android:id="@+id/seatSelectPriceTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="$9"
+            android:textSize="16dp"
+            android:fontFamily="@font/poppins_regular"
+            app:layout_constraintStart_toEndOf="@+id/textView22"
+            app:layout_constraintTop_toTopOf="@+id/textView22" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
